@@ -17,6 +17,7 @@
 
 - Primary :  #1A1A2E #16213E #150050 #3B185F 
 
+
 - Tints : #a199b9(darkest allowed)  #B9B3CB(used to deemhasize things) #d0ccdc(used as main color)             
 
 =>>>>    #e8e6ee  #ffffff (if you would use a light linear background ahead of your mesh up)
@@ -60,7 +61,7 @@ body {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
   line-height: 1;
-  /* background-color: #2a0944; */
+  /* background-color: #1a1a2e; */
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -69,7 +70,8 @@ body {
   font-size: 4.4rem;
   letter-spacing: -1.25px;
   line-height: 1.05;
-  background-image: url();
+  background-image: linear-gradient(to right bottom, red, blue)
+    url(img/mesh-gradient.png);
 }
 html {
   font-size: 62.5%;
