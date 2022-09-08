@@ -95,7 +95,8 @@ html {
 .grid--meals {
   display: grid;
   column-gap: 0;
-  background: url(/img/mesh-gradient.png);
+  /* background: url(/img/mesh-gradient.png); */
+  background: #16213e;
   border-radius: 2.4rem;
   padding: 2.4rem 0;
   box-shadow: 0 0 3.2rem 2.4rem hsla(28, 80%, 52%, 0.102);
@@ -117,7 +118,9 @@ html {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.grid--1fr-2fr {
+  grid-template-columns: 1fr 2.5fr;
+}
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {

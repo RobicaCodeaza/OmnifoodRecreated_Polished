@@ -131,8 +131,7 @@
   justify-content: center;
   gap: 2.4rem;
 }
-.delivered-imgs {
-}
+
 .delivered-imgs img {
   border-radius: 50%;
   width: 4.8rem;
@@ -309,9 +308,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -999;
+  /* z-index: -999; */
 }
-.imgBx::before {
+.imgBx::after {
   content: "";
   background: linear-gradient(to top, #1a1a2e, #16213e);
   position: absolute;
@@ -319,11 +318,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  /* z-index: 1; */
   opacity: 0;
   transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.containerC .box:hover .imgBx::before {
+.containerC .box:hover .imgBx::after {
   opacity: 0.69;
 }
 
@@ -509,11 +508,153 @@
 }
 /* 
 ===============================================================
-                    SECTION MEALS
+                    SECTION TESTIMONIALS
 ===============================================================
 */
 
-/* .section-pricing {
+.section-testimonials {
+  padding: 9.6rem;
+  background-color: #1a1a2e;
+}
+
+.gallery {
+  /* background: url(/img/mesh.png); */
+  background: #16213e;
+  /* width: 35%; */
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.imgBOX {
+  overflow: hidden;
+}
+.imgBOX img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+  border-radius: 9px;
+}
+
+.imgBOX img:hover {
+  transform: scale(1.2);
+}
+
+/* Trying to implement a testimonial swiper js */
+
+.slide-container.slide-container {
+  max-width: 120rem;
+  background-color: green;
+  box-sizing: border-box;
+  padding: 9.6rem;
+}
+.slide-content {
+  overflow: hidden;
+  background-color: #333;
+  margin: 5rem;
+}
+
+.card.card {
+  border-radius: 25px;
+  overflow: hidden;
+}
+.image-content,
+.card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-content {
   position: relative;
-  background-image: url(/img/mesh-gradient.png);
-}  */
+}
+.card-content {
+  position: relative;
+  background-color: #e67e22;
+}
+.card-image {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: #16213e;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #94d82d;
+}
+.card-image .card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.3rem solid #94d82d;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+.description {
+  font-size: 1.4rem;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  color: #e8e6ee;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  background-color: #1a1a2e;
+  margin: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #16213e;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background-color: #94d82d;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1;
+}
+.swiper-button-next.swiper-button-next {
+  width: 8rem;
+  height: 8rem;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e67e22;
+}
+
+.swiper-button-prev.swiper-button-prev {
+  width: 8rem;
+  height: 8rem;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  background-color: #e67e22;
+}
+
+/* Trying to implement Swiper */
+
+/* 
+===============================================================
+                    SECTION MEALS
+===============================================================
+*/ ;
