@@ -519,7 +519,7 @@
 
 .gallery {
   /* background: url(/img/mesh.png); */
-  /* background: #16213e; */
+  background: #16213e;
   /* width: 35%; */
   border-radius: 12px;
   display: grid;
@@ -549,15 +549,14 @@
 .glow {
   width: 100%;
   /* background-color: #16213e; */
-  background-color: #1a1a2e;
-  padding: 0.1rem;
+  border: 2px solid #16213e;
 }
-.glow--up {
+/* .glow--up {
   box-shadow: 0 -15px 10px 0 #e67d225e;
 }
 .glow--down {
   box-shadow: 0 15px 10px #e67d225e;
-}
+} */
 
 .slide-container.slide-container {
   max-width: 130rem;
@@ -670,6 +669,193 @@
 
 /* 
 ===============================================================
-                    SECTION MEALS
+                    SECTION CTA
 ===============================================================
 */
+
+.section-cta {
+  padding: 9.6rem;
+  background: url(/img/mesh.png);
+}
+
+.container--form {
+  margin: 0 auto;
+  width: 130rem;
+}
+.grid--form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 52rem;
+  border: 1px solid #5f5f6d;
+  border-bottom: 1px solid #5f5f6d7c;
+  border-right: 1px solid #5f5f6d7c;
+  box-shadow: 0 10px 25px 0 #1a1a2e;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 3.2rem 4.8rem;
+  backdrop-filter: blur(2.5px);
+  align-items: center;
+  color: #e8e6ee;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.form--sign-in {
+  transition: all 0.4s;
+}
+
+.form--create-account {
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.form-heading {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.social-links {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 3rem;
+}
+.social-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #cf711f;
+}
+.social-icon:hover {
+  color: #e67e22;
+}
+.more-details-form {
+  font-size: 1.6rem;
+  margin-bottom: 3.6rem;
+}
+.form input {
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: #5f5f6d;
+  border-radius: 9px;
+  border: none;
+  margin-bottom: 2rem;
+}
+.form input::placeholder {
+  color: #d0ccdc;
+}
+.password-form {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  font-weight: 500;
+}
+
+.btn--form {
+  display: block;
+  border: none;
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 9px;
+  background-color: #cf711f;
+  color: inherit;
+  transition: all 0.4s;
+}
+.btn--form-account {
+  margin-top: auto;
+}
+.btn--form-cover-account {
+  margin-top: 4.4rem;
+}
+.btn--form-cover-sign {
+  margin-top: 4.4rem;
+}
+
+.btn--form:hover {
+  background-color: #e67e22;
+}
+
+.create-account {
+  position: relative;
+}
+.sign-in {
+  position: relative;
+}
+
+/* 
+    COVER
+    Implementation
+
+*/
+
+.cover {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 4.8rem;
+}
+.cover-text {
+  font-size: 1.6rem;
+}
+.cover--account {
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a2e;
+  transition: all 0.4s ease-in-out;
+}
+.cover--sign-in {
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a2e;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.coverall .cover--account {
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.coverall .cover--sign-in {
+  transform: translate(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.coverall .form--sign-in {
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.coverall .form--create-account {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.4s;
+}
+
+/* 
+
+===============================================================
+                    SECTION CTA
+===============================================================
+*/ ;
