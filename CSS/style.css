@@ -519,13 +519,14 @@
 
 .gallery {
   /* background: url(/img/mesh.png); */
-  background: #16213e;
+  /* background: #16213e; */
   /* width: 35%; */
   border-radius: 12px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+  margin-bottom: 8rem;
 }
 .imgBOX {
   overflow: hidden;
@@ -545,43 +546,58 @@
 
 /* Trying to implement a testimonial swiper js */
 
+.glow {
+  width: 100%;
+  /* background-color: #16213e; */
+  background-color: #1a1a2e;
+  padding: 0.1rem;
+}
+.glow--up {
+  box-shadow: 0 -15px 10px 0 #e67d225e;
+}
+.glow--down {
+  box-shadow: 0 15px 10px #e67d225e;
+}
+
 .slide-container.slide-container {
-  max-width: 120rem;
-  background-color: green;
-  box-sizing: border-box;
-  padding: 9.6rem;
+  max-width: 130rem;
+  padding: 6rem 3rem;
+  margin-bottom: 6rem;
 }
 .slide-content {
   overflow: hidden;
-  background-color: #333;
-  margin: 5rem;
+  /* background-color: #1a1a2e; */
+  padding: 0 4rem;
 }
 
 .card.card {
   border-radius: 25px;
   overflow: hidden;
 }
+
 .image-content,
 .card-content {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .image-content {
   position: relative;
+  padding: 2rem;
 }
 .card-content {
+  padding: 3.2rem;
   position: relative;
-  background-color: #e67e22;
+  background-color: #d0ccdc;
+  height: 30rem;
 }
+
 .card-image {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   padding: 0.3rem;
   border-radius: 50%;
-  background-color: #16213e;
 }
 .overlay {
   position: absolute;
@@ -589,24 +605,26 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #94d82d;
+  background-color: #16213e;
 }
+
 .card-image .card-img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 0.3rem solid #94d82d;
+  border: 0.2rem solid #e8e6ee;
 }
 
 .name {
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
+  margin-bottom: 1.8rem;
 }
 .description {
-  font-size: 1.4rem;
-  color: #707070;
+  font-size: 1.6rem;
+  color: #333;
   text-align: center;
 }
 
@@ -617,38 +635,35 @@
   font-size: 1.6rem;
   border-radius: 9px;
   background-color: #1a1a2e;
-  margin: 1.4rem;
   cursor: pointer;
   transition: all 0.3s;
+  margin-top: auto;
 }
 .button:hover {
   background-color: #16213e;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
-  background-color: #94d82d;
+  background-color: #d0ccdc;
   opacity: 1;
 }
 .swiper-pagination-bullet-active.swiper-pagination-bullet-active {
-  background-color: red;
+  background-color: #e67e22;
   opacity: 1;
 }
 .swiper-button-next.swiper-button-next {
-  width: 8rem;
-  height: 8rem;
-  right: 0;
+  /* right: 0;
   top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #e67e22;
+  transform: translate(-50%, -50%); */
+  color: #d0ccdc;
 }
 
 .swiper-button-prev.swiper-button-prev {
-  width: 8rem;
-  height: 8rem;
-  left: 0;
+  /* left: 0;
   top: 50%;
-  transform: translate(50%, -50%);
-  background-color: #e67e22;
+  transform: translate(50%, -50%); */
+
+  color: #d0ccdc;
 }
 
 /* Trying to implement Swiper */
@@ -657,4 +672,4 @@
 ===============================================================
                     SECTION MEALS
 ===============================================================
-*/ ;
+*/
