@@ -121,6 +121,10 @@ html {
 .grid--1fr-2fr {
   grid-template-columns: 1fr 2.5fr;
 }
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -156,7 +160,7 @@ html {
   letter-spacing: 0.75px;
 }
 
-.colour:nth-child(1) {
+/* .colour:nth-child(1) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -185,10 +189,13 @@ html {
 
   background-color: #736696;
   filter: blur(600px);
-}
+} */
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 3.2rem !important;
 }
 
 .grid--center-v {

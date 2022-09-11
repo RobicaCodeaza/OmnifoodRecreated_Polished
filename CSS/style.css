@@ -436,6 +436,8 @@
 }
 
 .see-all-recipes-btn {
+  border-radius: 9px;
+
   position: relative;
   background: #16213e;
   color: #e8e6ee;
@@ -458,6 +460,8 @@
   content: "";
   position: absolute;
   inset: 2px;
+  border-radius: 9px;
+
   background: #1a1a2e;
 }
 
@@ -519,7 +523,7 @@
 
 .gallery {
   /* background: url(/img/mesh.png); */
-  background: #16213e;
+
   /* width: 35%; */
   border-radius: 12px;
   display: grid;
@@ -560,13 +564,13 @@
 
 .slide-container.slide-container {
   max-width: 130rem;
-  padding: 6rem 3rem;
-  margin-bottom: 6rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
 }
 .slide-content {
   overflow: hidden;
   /* background-color: #1a1a2e; */
-  padding: 0 4rem;
+  padding: 2rem 4rem;
 }
 
 .card.card {
@@ -587,7 +591,8 @@
 .card-content {
   padding: 3.2rem;
   position: relative;
-  background-color: #d0ccdc;
+  background: #a199b9;
+
   height: 30rem;
 }
 
@@ -643,18 +648,18 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
-  background-color: #d0ccdc;
+  background-color: #e8e6ee;
   opacity: 1;
 }
 .swiper-pagination-bullet-active.swiper-pagination-bullet-active {
-  background-color: #e67e22;
+  background-color: #cf711f;
   opacity: 1;
 }
 .swiper-button-next.swiper-button-next {
   /* right: 0;
   top: 50%;
   transform: translate(-50%, -50%); */
-  color: #d0ccdc;
+  color: #e8e6ee;
 }
 
 .swiper-button-prev.swiper-button-prev {
@@ -666,6 +671,125 @@
 }
 
 /* Trying to implement Swiper */
+
+/* 
+===============================================================
+                    SECTION Pricing
+===============================================================
+*/
+
+.section-pricing {
+  padding: 9.6rem;
+  background-color: #1a1a2e;
+}
+.pricing-plan {
+  border-radius: 12px;
+  padding: 4.6rem;
+  width: 80%;
+  border: 1px solid #5f5f6d;
+  border-bottom: 1px solid #5f5f6d7c;
+  border-right: 1px solid #5f5f6d7c;
+}
+.pricing-plan--simple {
+  position: relative;
+  justify-self: end;
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(2.5px);
+}
+.pricing-plan--complete {
+  position: relative;
+  transition: all 0.5s;
+
+  background-color: #16213e;
+}
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #e67e22;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #d0ccdc;
+}
+.plan-list {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.plan-list-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+}
+.pricing-plan .plan-list .list-item span {
+  font-size: 1.8rem;
+  color: #d0ccdc;
+}
+.plan-sign-up {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+
+.special--top::before {
+  transition: all 0.5s;
+  position: absolute;
+  content: "";
+  left: 15%;
+  bottom: 0;
+  width: 1.8rem;
+  height: 0.9rem;
+  transform: translateY(50%);
+  background-color: #16213e;
+  border: 2px solid #e67e22;
+}
+.special--top::after {
+  transition: all 0.5s;
+  position: absolute;
+  content: "";
+  right: 15%;
+  top: 0;
+  width: 1.8rem;
+  height: 0.9rem;
+  transform: translateY(-50%);
+  background-color: #16213e;
+  border: 2px solid #e67e22;
+}
+.pricing-plan--complete:hover {
+  border: 1px solid #e67e22;
+  box-shadow: 0 0 3.5rem #cf711f;
+}
+.pricing-plan--complete:hover .special--top::before {
+  width: 3rem;
+  left: 85%;
+  transform: translate(-50%, 50%);
+  /* transform: translateX(100%); */
+}
+.pricing-plan--complete:hover .special--top::after {
+  width: 3rem;
+  right: 85%;
+  transform: translate(50%, -50%);
+  /* transform: translateX(100%); */
+}
 
 /* 
 ===============================================================
@@ -683,6 +807,8 @@
   width: 120rem;
 }
 .grid--form {
+  border-radius: 12px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 52rem;
@@ -696,10 +822,10 @@
   flex-direction: column;
   height: 100%;
   padding: 3.2rem 4.8rem;
-  backdrop-filter: blur(2.5px);
   align-items: center;
   color: #e8e6ee;
   background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(2.5px);
 }
 .form--sign-in {
   transition: all 0.4s;
