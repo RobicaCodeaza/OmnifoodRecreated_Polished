@@ -16,6 +16,12 @@ var swiper = new Swiper(".slide-content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    520: { slidesPerView: 2 },
+    950: { slidesPerView: 3 },
+    1366: { slidesPerView: 4 },
+  },
 });
 
 const signUpButton = document.querySelector(".btn--form-cover-account");
@@ -28,4 +34,25 @@ signUpButton.addEventListener("click", () => {
 
 signInButton.addEventListener("click", () => {
   container.classList.remove("coverall");
+});
+
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear + 4;
+
+// Implementing smooth scrolling
+
+// const scroll = new SmoothScroll('a[href*="#"]', { speed: 100 });
+
+$(".smooth-scroll").on("click", function (e) {
+  if (this.hash !== "") {
+    e.preventDefault;
+    const hash = this.hash;
+    $("html,body").animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      1000
+    );
+  }
 });

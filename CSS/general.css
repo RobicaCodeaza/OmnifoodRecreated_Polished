@@ -195,7 +195,7 @@ html {
   margin-right: 1.6rem !important;
 }
 .margin-bottom-sm {
-  margin-bottom: 3.2rem !important;
+  margin-bottom: 4.4rem !important;
 }
 
 .grid--center-v {
@@ -207,4 +207,11 @@ html {
 
 .text-align {
   text-align: center;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.5rem rgba(207, 113, 31, 0.2);
 }
