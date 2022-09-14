@@ -56,3 +56,40 @@ $(".smooth-scroll").on("click", function (e) {
     );
   }
 });
+
+// Trying to implement the sticky bar navigation
+
+// const navbar = document.getElementById("navbar");
+// const sticky = navbar.offsetTop;
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+// window.onscroll = function () {
+//   myFunction();
+// };
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      console.log(ent);
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      console.log(ent);
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+obs.observe(sectionHeroEl);
