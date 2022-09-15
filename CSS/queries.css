@@ -468,6 +468,16 @@
     visibility: hidden;
     pointer-events: none;
   }
+  .footer-first {
+    padding: 6.4rem 1.6rem;
+  }
+  .footer-second {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .footer-third {
+    padding: 2.4rem 1.6rem;
+  }
   .footer-third .container {
     flex-direction: column;
     gap: 3.2rem;
