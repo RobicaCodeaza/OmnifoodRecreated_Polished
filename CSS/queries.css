@@ -381,7 +381,7 @@
     padding: 0 3.2rem;
   }
   .section-hero {
-    padding: 9rem;
+    padding: 2.4rem;
   }
   .hero {
     padding: 0 2.4rem;
@@ -392,6 +392,10 @@
   }
   .delivered-meals {
     margin-top: 4.8rem;
+  }
+  .delivered-imgs img {
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .logos {
     gap: 1.6rem;
