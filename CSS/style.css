@@ -5,8 +5,8 @@
 */
 
 .header-hero {
-  width: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
   background-image: linear-gradient(
       to right top,
       rgba(0, 0, 0, 0.027) 70%,
@@ -87,6 +87,26 @@
 
 .sticky .section-hero {
   margin-top: 9.6rem;
+}
+/* 
+Making mobile navigation 
+*/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #5f5f6d;
+}
+.icon-mobile-nav[name="menu-outline"] {
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* 
@@ -174,6 +194,7 @@
   font-weight: 700;
   color: #cf711f;
 }
+
 /* 
 ===============================================================
                     FEATURED IN SECTION
@@ -199,7 +220,7 @@
 .logos {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.4rem;
   justify-content: space-around;
 }
 .logos img {
@@ -827,9 +848,11 @@
   align-items: center;
   justify-content: center;
   max-width: 120rem;
+  flex-wrap: wrap;
 }
 .feature-card {
   height: 30rem;
+  width: 30rem;
   position: relative;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1);
@@ -874,7 +897,7 @@
 
 .container--form {
   margin: 0 auto;
-  width: 120rem;
+  max-width: 120rem;
 }
 .grid--form {
   border-radius: 12px;

@@ -1,0 +1,468 @@
+/*===========================================
+
+<=1344px(smaller desktops) = before HD 1366PX*16=84,...REM
+
+ ===========================================*/
+
+@media (max-width: 84em) {
+  .gallery {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+}
+
+/*===========================================
+
+<=1200px(landscape tablets) 
+
+ ===========================================*/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px = 56.25% */
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .hero-description {
+    font-size: 2.4rem;
+    padding: 0 3.2rem;
+  }
+
+  .section-how {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .grid--how {
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .img-container {
+    height: 350px;
+    width: 175px;
+    transform: rotate(-18deg) skew(11deg);
+  }
+  .step-img-box {
+    padding-top: 5.4rem;
+  }
+  .card-content {
+    padding: 2.4rem 1.8rem 1.8rem 2.4rem;
+    height: 28rem;
+  }
+  .plan-text {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .feature-container {
+    gap: 2.4rem;
+  }
+  .feature-card {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .feature-content {
+    padding: 2rem 1rem;
+  }
+  .feature-title {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+  }
+  .footer-first {
+    padding: 8rem 2.4rem;
+  }
+  .footer-second {
+    padding: 3.2rem 2.4rem;
+  }
+
+  .footer-third {
+    padding: 3.2rem 2.4rem;
+  }
+}
+
+/*===========================================
+
+<=944px(Tablets) 
+
+ ===========================================*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    padding: 0 2.4rem;
+  }
+  .hero-description {
+    padding: 0 4.8rem;
+  }
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+  .logos img {
+    height: 2.8rem;
+  }
+  .section-featured-in {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .img-container {
+    height: 300px;
+    width: 150px;
+    transform: rotate(-18deg) skew(11deg);
+  }
+  .step-img-box {
+    padding-top: 5.15rem;
+  }
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .grid--how {
+    display: grid;
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .box {
+    height: 25rem;
+    padding: 3.2rem 1.6rem 1.6rem 4.4rem;
+  }
+
+  .meal-title {
+    margin-bottom: 2rem;
+  }
+  .meal-attributes {
+    gap: 1.2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .card-content {
+    padding: 3.2rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  .pricing-plan {
+    padding: 3.2rem;
+  }
+  .feature-container {
+    gap: 3.2rem;
+  }
+
+  .feature-card {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .cover-text {
+    text-align: center;
+  }
+}
+
+/*===========================================
+
+<=768px(Smaller Tablets) 
+
+ ===========================================*/
+
+@media (max-width: 48em) {
+  .header {
+    padding: 2.4rem;
+  }
+  .main-nav-list {
+    gap: 1.2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+  .section-hero {
+    padding: 4.8rem;
+  }
+  .delivered-meals {
+    flex-direction: column;
+  }
+
+  .logos {
+    gap: 1.6rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .section-how {
+  }
+  .img-container {
+    /* transform: rotate(0) skew(0); */
+  }
+  .grid--how {
+    grid-template-columns: 1fr;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:last-child {
+    grid-row: 5;
+  }
+  .section-meals {
+    padding: 4.8rem;
+  }
+  .containerC {
+    gap: 3.2rem;
+  }
+  .box {
+    height: 22.5rem;
+    width: 22.5rem;
+    padding: 2.4rem 1rem 1rem 2.4rem;
+  }
+  .list-item {
+    gap: 1.2rem;
+  }
+  .meal-title {
+    font-size: 1.8rem;
+  }
+  .meal-attributes {
+    gap: 1.4rem;
+  }
+  .section-testimonials {
+    padding: 4.8rem;
+  }
+  .card-content {
+    padding: 1.6rem 1.2rem 1.2rem 1.6rem;
+  }
+  .section-pricing {
+    padding: 4.8rem 1.6rem 4.8rem 1.6rem;
+  }
+  .pricing-plan {
+    padding: 2.4rem;
+  }
+  .plan-header {
+    margin-bottom: 3.2rem;
+  }
+  .plan-name {
+    margin-bottom: 2.4rem;
+  }
+  .plan-list {
+    gap: 1.2rem;
+  }
+  .plan-sign-up {
+    margin-top: 3.2rem;
+  }
+  .section-cta {
+    padding: 4.8rem;
+  }
+  .form {
+    padding: 2.4rem 3.2rem;
+  }
+  .cover {
+    padding: 2.4rem 3.2rem;
+  }
+  .more-details-form {
+    text-align: center;
+  }
+
+  .footer-second .container {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  /* Button Implementation */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3b185f;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  .nav-active .main-nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .nav-active .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-active .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+}
+
+/*===========================================
+
+<=575px(PHONES) 
+
+ ===========================================*/
+
+@media (max-width: 36em) {
+  .heading-primary {
+    font-size: 4.4rem;
+    margin-bottom: 4.8rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--meals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: 3.2rem 6.4rem;
+  }
+  .list {
+    gap: 0;
+  }
+  .list-item {
+    margin-bottom: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-hero {
+    padding: 2.4rem;
+  }
+  .hero {
+    padding: 0 2.4rem;
+  }
+  .hero-description {
+    font-size: 2rem;
+    margin-bottom: 3.2rem;
+  }
+  .delivered-meals {
+    margin-top: 4.8rem;
+  }
+  .logos {
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
+  .logos img {
+    height: 2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .containerC {
+    flex-wrap: wrap;
+  }
+  .containerC:hover .box {
+    transform: rotateY(0);
+  }
+  .containerC .box:hover {
+    transform: translate(5%, -5%) scale(1.025);
+  }
+  .containerC .box:hover ~ .box {
+    transform: rotateY(0);
+  }
+
+  .box:hover .meal-attributes {
+    transform: translateY(0);
+  }
+  .pricing-plan--simple {
+    justify-self: center;
+  }
+  .pricing-plan--complete {
+    justify-self: center;
+  }
+  .feature-content {
+    padding: 4rem 2rem;
+  }
+  .grid--form {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    height: 95rem;
+  }
+
+  .form--create-account {
+    border-top: 2px solid #5f5f6d;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .form {
+    height: 47.5rem;
+    background-color: #3b185f;
+  }
+  .cover {
+    position: relative;
+    display: none;
+  }
+  .cover--account {
+    transform: translateX(100%);
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .cover--sign-in {
+    transform: translateX(100%);
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .footer-third .container {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}

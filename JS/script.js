@@ -18,7 +18,7 @@ var swiper = new Swiper(".slide-content", {
   },
   breakpoints: {
     0: { slidesPerView: 1 },
-    520: { slidesPerView: 2 },
+    575: { slidesPerView: 2 },
     950: { slidesPerView: 3 },
     1366: { slidesPerView: 4 },
   },
@@ -90,6 +90,22 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
+    rootMargin: "-80px",
   }
+  // breakpoints: {
+  //   0:{rootMargin:"-80px"},
+  //   768:{
+  //     rootMargin:"0px"
+  //   },
+  // },
 );
 obs.observe(sectionHeroEl);
+
+// Implementing main nav button
+
+headerEl = document.querySelector(".header");
+btnNavEl = document.querySelector(".btn-mobile-nav");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-active");
+});
