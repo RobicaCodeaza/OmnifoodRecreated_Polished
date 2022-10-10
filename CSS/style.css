@@ -19,6 +19,7 @@
     ),
     url(/img/heromax-overlay.webp);
   background-size: cover;
+  position: relative;
 }
 
 .logo {
@@ -28,6 +29,7 @@
 
 .header {
   padding: 0 4.8rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,11 +138,12 @@ Making mobile navigation
   margin-bottom: 6.4rem;
   color: #e8e6ee;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   text-decoration: none;
+  border: none;
   font-size: 2rem;
   font-weight: 500;
   border-radius: 9px;
@@ -688,7 +691,7 @@ Making mobile navigation
   margin-top: auto;
 }
 .button:hover {
-  background-color: #16213e;
+  background-color: #313143;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
@@ -743,7 +746,6 @@ Making mobile navigation
 .pricing-plan--complete {
   position: relative;
   transition: all 0.5s;
-
   background-color: #16213e;
 }
 .plan-header {
@@ -847,7 +849,7 @@ Making mobile navigation
   gap: 3.2rem;
   align-items: center;
   justify-content: center;
-  max-width: 120rem;
+  max-width: 130rem;
   flex-wrap: wrap;
 }
 .feature-card {
@@ -1120,11 +1122,11 @@ Making mobile navigation
   font-size: 1.6rem;
   line-height: 1.6;
   cursor: pointer;
-  color: inherit;
+  color: #d0ccdc;
 }
 .nav-item:hover,
 .nav-item:active {
-  color: #d0ccdc;
+  color: #e8e6ee;
 }
 
 .adress-col p {
@@ -1185,9 +1187,9 @@ Making mobile navigation
 .subscribe-input-field::placeholder {
   color: #a199b9;
 }
-.subscribe-button {
+/* .subscribe-button {
   border-radius: none;
-}
+} */
 .footer-second .social-links {
   margin-bottom: 0;
 }

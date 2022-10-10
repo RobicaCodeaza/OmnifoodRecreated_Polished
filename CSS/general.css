@@ -71,9 +71,11 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #e8e6ee;
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .container {

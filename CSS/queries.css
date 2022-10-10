@@ -8,6 +8,7 @@
   .gallery {
     grid-template-columns: repeat(8, 1fr);
   }
+
   .heading-primary {
     font-size: 5.2rem;
   }
@@ -188,6 +189,7 @@
 @media (max-width: 48em) {
   .header {
     padding: 2.4rem;
+    position: relative;
   }
   .main-nav-list {
     gap: 1.2rem;
@@ -222,7 +224,7 @@
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
-  .step-img-box:last-child {
+  .step-img-box:nth-child(6) {
     grid-row: 5;
   }
   .section-meals {
@@ -291,7 +293,7 @@
 
   .btn-mobile-nav {
     display: block;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .main-nav {
@@ -300,19 +302,24 @@
     left: 0;
     height: 100vh;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: #3b185f;
-    z-index: 1;
+
     transform: translateX(100%);
     transition: all 0.5s ease-in-out;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+  .nav-active .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1;
   }
   .main-nav-list {
     flex-direction: column;
@@ -322,12 +329,7 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
-  .nav-active .main-nav {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
+
   .nav-active .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
