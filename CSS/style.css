@@ -105,9 +105,9 @@ Making mobile navigation
   width: 4.8rem;
   color: #5f5f6d;
 }
-.icon-mobile-nav[name="menu-outline"] {
+.icon-mobile-nav[name='menu-outline'] {
 }
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
@@ -358,7 +358,7 @@ Making mobile navigation
   /* z-index: -999; */
 }
 .imgBx::after {
-  content: "";
+  content: '';
   background: linear-gradient(to top, #1a1a2e, #16213e);
   position: absolute;
   top: 0;
@@ -504,7 +504,7 @@ Making mobile navigation
 }
 
 .see-all-recipes-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 2px;
   border-radius: 9px;
@@ -524,7 +524,7 @@ Making mobile navigation
 }
 
 .see-all-recipes-btn i::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 1.2rem;
   height: 0.6rem;
@@ -542,7 +542,7 @@ Making mobile navigation
 }
 
 .see-all-recipes-btn i::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1.2rem;
   height: 0.6rem;
@@ -799,7 +799,7 @@ Making mobile navigation
 .special--top::before {
   transition: all 0.5s;
   position: absolute;
-  content: "";
+  content: '';
   left: 15%;
   bottom: 0;
   width: 1.8rem;
@@ -811,7 +811,7 @@ Making mobile navigation
 .special--top::after {
   transition: all 0.5s;
   position: absolute;
-  content: "";
+  content: '';
   right: 15%;
   top: 0;
   width: 1.8rem;
